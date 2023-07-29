@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+
+<body>
+ <div class="calculate">
+	<h1>Calculator</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('math_operator')}}" method="post">
+    	<input type="text" name="operation" placeholder="operation" required="required" />
+        <input type="number" name="number1" placeholder="number1" required="required" />
+		<input type="number" name="number2" placeholder="number2" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button</button>
+    </form>
+
+   <br>
+
+ </div>
+
+
+</body>
+</html>
